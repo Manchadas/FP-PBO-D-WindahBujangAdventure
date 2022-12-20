@@ -1,0 +1,18 @@
+package Object;
+
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+public class OBJ_bible extends Superobject{
+	
+	public OBJ_bible() {
+		
+		name = "bible";
+		try {
+			image = ImageIO.read(getClass().getResourceAsStream("/objects/bible.png"));
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,17 @@
+package Object;
+
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+public class OBJ_bed2 extends SuperObject{
+		public OBJ_bed2() {
+		
+		name = "tempattidur2";
+		try {
+			image = ImageIO.read(getClass().getResourceAsStream("/objects/bed2.png"));
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

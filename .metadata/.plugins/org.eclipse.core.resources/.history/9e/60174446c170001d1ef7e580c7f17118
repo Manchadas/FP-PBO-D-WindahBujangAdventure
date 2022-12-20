@@ -1,0 +1,24 @@
+package main;
+
+import Object.OBJ_papua;
+import Object.OBJ_sword;
+
+public class AssetSetter {
+	
+	GamePanel gp;
+	
+	public AssetSetter(GamePanel gp) {
+		this.gp = gp;
+	}
+	
+	public void setObject(){
+		
+		gp.obj[0] = new OBJ_sword();
+		gp.obj[0].worldX = 24 * gp.pixelSize;
+		gp.obj[0].worldY = 19 * gp.pixelSize;
+		
+		gp.obj[0] = new OBJ_papua();
+		gp.obj[0].worldX = 23 * gp.pixelSize;
+		gp.obj[0].worldY = 19 * gp.pixelSize;
+	}
+}
